@@ -14,6 +14,18 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "phrase": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::phrase.phrase",
+      "inversedBy": "author"
+    },
+    "story": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::story.story",
+      "inversedBy": "author"
     }
   }
 }

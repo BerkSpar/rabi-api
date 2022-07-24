@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "story_of_the_days",
+  "info": {
+    "singularName": "story-of-the-day",
+    "pluralName": "story-of-the-days",
+    "displayName": "StoryOfTheDay"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "story": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::story.story"
+    }
+  }
+}

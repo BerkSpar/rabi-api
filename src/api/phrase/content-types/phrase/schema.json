@@ -4,8 +4,7 @@
   "info": {
     "singularName": "phrase",
     "pluralName": "phrases",
-    "displayName": "Phrase",
-    "description": ""
+    "displayName": "Phrase"
   },
   "options": {
     "draftAndPublish": true
@@ -13,13 +12,14 @@
   "pluginOptions": {},
   "attributes": {
     "text": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
     "author": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::author.author"
+      "target": "api::author.author",
+      "inversedBy": "phrase"
     }
   }
 }
